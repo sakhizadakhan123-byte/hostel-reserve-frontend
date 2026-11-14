@@ -1,4 +1,4 @@
-function RoomCard({ room }) {
+function RoomCard({ room, onDelete }) {
   return (
     <div className="room-card">
       <div className="room-card__header">
@@ -10,6 +10,14 @@ function RoomCard({ room }) {
       <p><strong>Type:</strong> {room.room_type}</p>
       <p><strong>Floor:</strong> {room.floor}</p>
       <p><strong>Price:</strong> ${room.price} / night</p>
+      
+      {/* دکمه حذف */}
+      <button 
+        className="button button--danger" 
+        onClick={() => onDelete(room.id)}
+      >
+        Delete
+      </button>
     </div>
   );
 }

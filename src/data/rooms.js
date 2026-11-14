@@ -6,6 +6,7 @@ export const rooms = [
     status: "available",
     room_type: "Single",
     price: 50,
+    capacity: 1,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const rooms = [
     status: "occupied",
     room_type: "Double",
     price: 80,
+     capacity: 2,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const rooms = [
     status: "available",
     room_type: "Suite",
     price: 150,
+     capacity: 4,
   },
   {
     id: 4,
@@ -30,5 +33,6 @@ export const rooms = [
     status: "maintenance",
     room_type: "Single",
     price: 50,
+     capacity: 1,
   },
 ];
